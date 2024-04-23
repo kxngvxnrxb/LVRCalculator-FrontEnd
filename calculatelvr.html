@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>LVR Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="lvr-header">
+                <header>Fill in the details</header>
+            </div>
+            <div class="input-box">
+                <p>What is the value of the property?</p>
+                <input type="text" class="input-field" autocomplete="off" id="propertyvalue" required>
+            </div>
+            <div class="input-box">
+                <p>How much are you planning to borrow?</p>
+                <input type="text" class="input-field" autocomplete="off" id="loanvalue" required>
+            </div>
+            <div class="input-submit">
+                <button class="submit-btn" id="calculatelvr"></button>
+                <label for="submit">Calculate</label>
+            </div>
+        </div>
+        <div class="right">
+            <div class="lvr-header">
+                <header>Result</header>
+            </div>
+            <p><span>Property Value: </span><tr></tr><span id = 'resultPropertyValue'></span></p>
+            <hr>
+            <p><span>Loan Amount: </span><span id = 'resultLoanValue'></span></p>
+            <hr>
+            <p><span>LVR: </span><span id = 'lvrValue'></span></p>
+        </div>
+    </div>
+    <script src="calculate.js"></script>
+</body>
+</html>
